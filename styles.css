@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background-image: url(ricefield.jpg);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  padding: 2rem;
+}
+
+.heading {
+  text-align: center;
+  color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.card {
+  background-color: yellowgreen;
+  border-radius: 0.8rem;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+.type p {
+  display: inline;
+  padding: 1rem;
+}

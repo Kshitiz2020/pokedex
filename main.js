@@ -7,7 +7,6 @@ SearchInput.addEventListener("keyup", (e) => {
   const filteredData = pokeData.filter((fData) => {
     return fData.name.toLowerCase().includes(searchString);
   });
-  displayCharacters();
 });
 
 const fetchData = async () => {
@@ -38,11 +37,8 @@ const fetchData = async () => {
 .then(x => x.text())
 .then(y => myDisplay(y)); */
 
-const displayCharacters = (fData) => {};
-
 const pokeCards = () => {
   const cards = pokeData
-    .filter()
     .map((pokemon) => {
       return ` <div class="card">
       <p>${pokemon.id}</p>
@@ -67,8 +63,3 @@ const getTypeString = (type) => {
 };
 
 fetchData();
-
-/* const typeOfPokemon = types.map(() => {
-  <div class="type"><p>Water</p> <p>Poison</p></div>
-  </div>`
-}) */
